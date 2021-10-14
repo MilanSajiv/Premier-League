@@ -1,0 +1,6 @@
+selenium
+pandas
+psycopg2
+SQLAlchemy
+requests
+selenium.webdriver.chrome.options
