@@ -16,8 +16,27 @@ The primary motivation behind this project is to leverage machine learning techn
 - Orchestrates the scraping process by defining match IDs for specific seasons.
 - Invokes the PL_Scraper class to scrape data for each match ID within the specified seasons.
 
-##Usage
+## Usage
 1. Clone the repository to your local machine.
 2. Ensure you have Python installed along with the required libraries listed in requirements.txt.
 3. Run Main.py to initiate the scraping process. Adjust the years dictionary within the script to specify the desired seasons.
 4. Extracted data will be stored in CSV files within the Final_Results directory, ready for analysis.
+
+## Example
+```python
+from Package.Scraper import Scraper
+
+# Define match IDs for specific seasons
+years = {"pl20_21": range(58897, 58899), "pl19_20": range(46605, 46607)}
+
+# Scraping process
+for id_range in years.values():
+    for match_id in id_range:
+        Scraper.scrape_match(match_id)
+```
+## Data
+- Contains CSV files corresponding to each Premier League season.
+- Each file provides detailed match descriptions, including date, teams, scores, possession, shots on target, and other statistics.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
