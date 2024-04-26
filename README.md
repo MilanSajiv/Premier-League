@@ -17,10 +17,18 @@ The primary motivation behind this project is to leverage machine learning techn
 - Invokes the PL_Scraper class to scrape data for each match ID within the specified seasons.
 
 ## Usage
-1. Clone the repository to your local machine.
-2. Ensure you have Python installed along with the required libraries listed in requirements.txt.
-3. Run Main.py to initiate the scraping process. Adjust the years dictionary within the script to specify the desired seasons.
-4. Extracted data will be stored in CSV files within the Final_Results directory, ready for analysis.
+1. Clone the repository to your local machine:
+```python
+git clone https://github.com/MilanSajiv/Premier-League.git
+```
+
+2. Run the main script to initiate the data scraping process and generate match statistics:
+```python
+python Main.py
+```
+3. Follow the prompts to specify the seasons for which you want to scrape match data.
+5. Once the scraping process is complete, the script will store the extracted data in CSV files within the Final_Results directory.
+6. Use the generated CSV files to conduct further analysis, develop machine learning models, or visualize the data using your preferred tools or libraries.
 
 ## Example
 ```python
